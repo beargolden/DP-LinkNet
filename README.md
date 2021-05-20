@@ -12,21 +12,21 @@ The proposed DP-LinkNet uses LinkNet[2] and D-LinkNet[3] with a pre-trained enco
 
 ![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\DP-LinkNet-architecture.png)
 
-<center>Fig. 1  The proposed DP-LinkNet architecture</center>
+Fig. 1  The proposed DP-LinkNet architecture
 
 ![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\HDC-module.png)
 
-<center>Fig. 2  Hybrid Dilated Convolution (HDC) module</center>
+Fig. 2  Hybrid Dilated Convolution (HDC) module
 
 ![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\SPP-module.png)
 
-<center>Fig. 3  Spatial Pyramid Pooling (SPP) module</center>
+Fig. 3  Spatial Pyramid Pooling (SPP) module
 
 ### Experimental Results and Analysis
 
 #### Ablation Study
 
-<center>Table 1  Ablation study on LinkNet, D-LinkNet, and the proposed DP-LinkNet</center>
+Table 1  Ablation study on LinkNet, D-LinkNet, and the proposed DP-LinkNet
 
 | **Architecture** | **Params** | **FM(%)** | **pFM(%)** | **PSNR(dB)** |  **DRD** | **MPM(‰)** |
 | ---------------: | ---------: | --------: | ---------: | -----------: | -------: | ---------: |
@@ -36,7 +36,7 @@ The proposed DP-LinkNet uses LinkNet[2] and D-LinkNet[3] with a pre-trained enco
 
 #### More Segmentation Experiments
 
-<center>Table 2  Performance evaluation results of our proposed method against the TOP 3 winners in the DIBCO or H-DIBCO annual competition (best results highlighted in bold)</center>
+Table 2  Performance evaluation results of our proposed method against the TOP 3 winners in the DIBCO or H-DIBCO annual competition (best results highlighted in bold)
 
 | Dataset      | Method   | FM(%) | pFM(%) | PSNR(dB) | NRM(%) |    DRD | MPM(‰) |
 | ------------ | -------- | ----: | -----: | -------: | -----: | -----: | -----: |
@@ -82,7 +82,7 @@ The proposed DP-LinkNet uses LinkNet[2] and D-LinkNet[3] with a pre-trained enco
 |              | Rank 3   | 70.43 |  69.84 |    15.31 |        |   8.05 |        |
 |              | Proposed | 87.67 |  87.56 |    18.63 |        |   2.38 |        |
 
-<center>Table 3  Performance evaluation results of our proposed method against the state-of-the-art techniques on the 10 DIBCO and H-DIBCO testing datasets (best results highlighted in bold)</center>
+Table 3  Performance evaluation results of our proposed method against the state-of-the-art techniques on the 10 DIBCO and H-DIBCO testing datasets (best results highlighted in bold)
 
 | **Rank** | **Method**          | **FM(%)** | **pFM(%)** | **PSNR(dB)** |  **DRD** | **Score** |
 | :------: | ------------------- | --------: | ---------: | -----------: | -------: | --------: |
