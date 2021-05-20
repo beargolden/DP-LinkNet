@@ -22,7 +22,7 @@ Fig. 2  Hybrid Dilated Convolution (HDC) module
 
 Fig. 3  Spatial Pyramid Pooling (SPP) module
 
-### Experimental Results and Analysis
+### Experimental Results
 
 #### Ablation Study
 
