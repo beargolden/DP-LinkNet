@@ -10,15 +10,15 @@ Document image binarization is an important pre-processing step in document anal
 
 The proposed DP-LinkNet uses LinkNet[2] and D-LinkNet[3] with a pre-trained encoder as the backbone. It consists of four main parts: the **encoder** (part A), the ***hybrid dilated convolution*** (HDC) module (part B), the ***spatial pyramid pooling*** (SPP) module (part C), and the **decoder** (part D). The encoder extracts text stroke features with deep semantic information. The HDC module expands the receptive field size and aggregates multi-scale contextual features, while the SPP module encodes the output of the HDC with multi-kernel pooling. The combination of the HDC and SPP modules will produce enriched higher-level abstract feature maps. The decoder then maps the low-resolution feature map output from the central part back to the size of the input image for pixel-by-pixel classification. Although there are several subtle and important differences, what distinguishes our proposed DP-LinkNet from the two models mentioned above is that the LinkNet[2] contains only part A and D, while D-LinkNet[3] additionally contains part B.
 
-![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\DP-LinkNet-architecture.png)
+![](https://github.com/beargolden/DP-LinkNet/blob/main/images/DP-LinkNet-architecture.png)
 
 Fig. 1  The proposed DP-LinkNet architecture
 
-![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\HDC-module.png)
+![](https://github.com/beargolden/DP-LinkNet/blob/main/images/HDC-module.png)
 
 Fig. 2  Hybrid Dilated Convolution (HDC) module
 
-![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\SPP-module.png)
+![](https://github.com/beargolden/DP-LinkNet/blob/main/images/SPP-module.png)
 
 Fig. 3  Spatial Pyramid Pooling (SPP) module
 
