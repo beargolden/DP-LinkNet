@@ -1,10 +1,12 @@
 # DP-LinkNet: A convolutional network for historical document image binarization
 
+[TOC]
+
 ### Abstract
 
 Document image binarization is an important pre-processing step in document analysis and archiving. The state-of-the-art models for document image binarization are variants of encoder-decoder architectures, such as FCN (*fully convolutional network*) and U-Net. Despite their success, they still suffer from three limitations: (1) reduced feature map resolution due to consecutive strided pooling or convolutions, (2) multiple scales of target objects, and (3) reduced localization accuracy due to the built-in invariance of *deep convolutional neural networks* (DCNNs). To overcome these three challenges, we propose an improved semantic segmentation model, referred to as **DP-LinkNet**, which adopts the D-LinkNet architecture as its backbone, with the proposed *hybrid dilated convolution* (HDC) and *spatial pyramid pooling* (SPP) modules between the encoder and the decoder. Extensive experiments are conducted on recent *document image binarization competition* (DIBCO) and *handwritten document image binarization competition* (H-DIBCO) benchmark datasets. Results show that our proposed DP-LinkNet outperforms other state-of-the-art techniques by a large margin. Our implementation and the pre-trained models are available at https://github.com/beargolden/DP-LinkNet.
 
-### Proposed Architecture: DP-LinkNet
+### Proposed Architecture
 
 **The proposed method won the first place in ICDAR 2019 time-quality binarization competition on photographed document images taken by Motorola Z1 and Galaxy Note4 with flash off, and the second and third places on binarization of photographed document images taken by the same mobile devices with flash on, respectively[1].**
 
