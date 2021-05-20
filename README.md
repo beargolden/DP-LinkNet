@@ -6,15 +6,27 @@ Document image binarization is an important pre-processing step in document anal
 
 ### Proposed Architecture: DP-LinkNet
 
-The proposed method won the first place in **ICDAR 2019 time-quality binarization competition on photographed document images** taken by Motorola Z1 and Galaxy Note4 with flash off, and the second and third places on binarization of photographed document images taken by the same mobile devices with flash on, respectively[].
+**The proposed method won the first place in ICDAR 2019 time-quality binarization competition on photographed document images taken by Motorola Z1 and Galaxy Note4 with flash off, and the second and third places on binarization of photographed document images taken by the same mobile devices with flash on, respectively[1].**
 
-The proposed DP-LinkNet uses D-LinkNet[] and LinkNet[] with a pre-trained encoder as the backbone. It consists of four main parts: the **encoder** (part A), the ***hybrid dilated convolution*** (HDC) module (part B), the ***spatial pyramid pooling*** (SPP) module (part C), and the **decoder** (part D). The encoder extracts text stroke features with deep semantic information. The HDC module expands the receptive field size and aggregates multi-scale contextual features, while the SPP module encodes the output of the HDC with multi-kernel pooling. The combination of the HDC and SPP modules will produce enriched higher-level abstract feature maps. The decoder then maps the low-resolution feature map output from the central part back to the size of the input image for pixel-by-pixel classification. Although there are several subtle and important differences, what distinguishes our proposed DP-LinkNet from the two models mentioned above is that the LinkNet[] contains only part A and D, while D-LinkNet[] additionally contains part B.
+The proposed DP-LinkNet uses LinkNet[2] and D-LinkNet[3] with a pre-trained encoder as the backbone. It consists of four main parts: the **encoder** (part A), the ***hybrid dilated convolution*** (HDC) module (part B), the ***spatial pyramid pooling*** (SPP) module (part C), and the **decoder** (part D). The encoder extracts text stroke features with deep semantic information. The HDC module expands the receptive field size and aggregates multi-scale contextual features, while the SPP module encodes the output of the HDC with multi-kernel pooling. The combination of the HDC and SPP modules will produce enriched higher-level abstract feature maps. The decoder then maps the low-resolution feature map output from the central part back to the size of the input image for pixel-by-pixel classification. Although there are several subtle and important differences, what distinguishes our proposed DP-LinkNet from the two models mentioned above is that the LinkNet[2] contains only part A and D, while D-LinkNet[3] additionally contains part B.
+
+![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\DP-LinkNet-architecture.png)
+
+<center>Fig. 1  The proposed DP-LinkNet architecture</center>
+
+![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\HDC-module.png)
+
+<center>Fig. 2  Hybrid Dilated Convolution (HDC) module</center>
+
+![](E:\论文发表\论文投稿\2021年度\DP-LinkNet-KSII-TIIS\images\SPP-module.png)
+
+<center>Fig. 3  Spatial Pyramid Pooling (SPP) module</center>
 
 ### Experimental Results and Analysis
 
 #### Ablation Study
 
-Table 1  Ablation study on LinkNet, D-LinkNet, and the proposed DP-LinkNet
+<center>Table 1  Ablation study on LinkNet, D-LinkNet, and the proposed DP-LinkNet</center>
 
 | **Architecture** | **Params** | **FM(%)** | **pFM(%)** | **PSNR(dB)** |  **DRD** | **MPM(‰)** |
 | ---------------: | ---------: | --------: | ---------: | -----------: | -------: | ---------: |
@@ -24,7 +36,7 @@ Table 1  Ablation study on LinkNet, D-LinkNet, and the proposed DP-LinkNet
 
 #### More Segmentation Experiments
 
-Table 2  Performance evaluation results of our proposed method against the TOP 3 winners in the DIBCO or H-DIBCO annual competition (best results highlighted in bold)
+<center>Table 2  Performance evaluation results of our proposed method against the TOP 3 winners in the DIBCO or H-DIBCO annual competition (best results highlighted in bold)</center>
 
 | Dataset      | Method   | FM(%) | pFM(%) | PSNR(dB) | NRM(%) |    DRD | MPM(‰) |
 | ------------ | -------- | ----: | -----: | -------: | -----: | -----: | -----: |
@@ -70,7 +82,7 @@ Table 2  Performance evaluation results of our proposed method against the TOP 3
 |              | Rank 3   | 70.43 |  69.84 |    15.31 |        |   8.05 |        |
 |              | Proposed | 87.67 |  87.56 |    18.63 |        |   2.38 |        |
 
-Table 3  Performance evaluation results of our proposed method against the state-of-the-art techniques on the 10 DIBCO and H-DIBCO testing datasets (best results highlighted in bold)
+<center>Table 3  Performance evaluation results of our proposed method against the state-of-the-art techniques on the 10 DIBCO and H-DIBCO testing datasets (best results highlighted in bold)</center>
 
 | **Rank** | **Method**          | **FM(%)** | **pFM(%)** | **PSNR(dB)** |  **DRD** | **Score** |
 | :------: | ------------------- | --------: | ---------: | -----------: | -------: | --------: |
@@ -87,3 +99,10 @@ Table 3  Performance evaluation results of our proposed method against the state
 |    11    | Otsu’s              |     74.22 |      76.99 |        14.54 |    30.36 |     17116 |
 |    12    | Niblack’s           |     41.12 |      41.57 |         6.67 |    91.23 |     50335 |
 
+References
+
+[1] R. Dueire Lins, E. Kavallieratou, E. B. Smith, R. B. Bernardino, D. M. D. Jesus, "ICDAR 2019 time-quality binarization competition," in Proceedings of the *15th IAPR International Conference on Document Analysis and Recognition (ICDAR 2019)*, Sydney, NSW, AUSTRALIA, 2019, pp. 1539-1546. doi: 10.1109/icdar.2019.00248
+
+[2] A. Chaurasia, E. Culurciello, "LinkNet: Exploiting encoder representations for efficient semantic segmentation," in Proceedings of the *2017 IEEE Visual Communications and Image Processing (VCIP 2017)*, St. Petersburg, FL, USA, 2017, pp. 1-4. doi: 10.1109/vcip.2017.8305148
+
+[3] L. Zhou, C. Zhang, M. Wu, "D-LinkNet: LinkNet with pretrained encoder and dilated convolution for high resolution satellite imagery road extraction," in Proceedings of the *31st Meeting of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPR 2018)*, Salt Lake City, UT, USA, 2018, pp. 192-196. doi: 10.1109/cvprw.2018.00034
