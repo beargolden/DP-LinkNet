@@ -1,6 +1,6 @@
 # DP-LinkNet: A convolutional network for historical document image binarization
 
-**If the code is helpful to your research, please cite the following paper:**
+**If the code is helpful to your research, the reader can refer to http://itiis.org/digital-library/24643 and please cite the following paper:**
 
 - **W. Xiong, X. Jia, D. Yang, M. Ai, L. Li and S. Wang, "DP-LinkNet: A convolutional network for historical document image binarization," *KSII Transactions on Internet and Information Systems*, vol. 15, no. 5, pp. 1778-1797, 2021. DOI: 10.3837/tiis.2021.05.011.**
 
