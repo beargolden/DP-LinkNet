@@ -26,6 +26,22 @@ Fig. 2  Hybrid Dilated Convolution (HDC) module
 
 Fig. 3  Spatial Pyramid Pooling (SPP) module
 
+### Implementation Details
+
+#### Requirements
+
+- anaconda
+- python=3.6.10
+- cuda=10.2.89
+- cudnn=7.6.5
+- pytorch=1.7.1
+- opencv=3.4.13.47
+
+#### Download pre-trained models
+
+- [BaiduNetdisk] Link: https://pan.baidu.com/s/16bGkVy8su0D-yrazeM_dsA 
+  Extraction Code: g12z
+
 ### Experimental Results
 
 #### Ablation Study
