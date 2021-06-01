@@ -37,7 +37,7 @@ Fig. 3  Spatial Pyramid Pooling (SPP) module
 - pytorch=1.7.1
 - opencv=3.4.13.47
 
-#### Download pre-trained models
+#### Download pre-trained LinkNet34, D-LinkNet34, and DP-LinkNet34 models
 
 - [BaiduNetdisk] Link: https://pan.baidu.com/s/16bGkVy8su0D-yrazeM_dsA
   Extraction Code: g12z
