@@ -39,7 +39,7 @@ Fig. 3  Spatial Pyramid Pooling (SPP) module
 
 #### Download pre-trained models
 
-- [BaiduNetdisk] Link: https://pan.baidu.com/s/16bGkVy8su0D-yrazeM_dsA 
+- [BaiduNetdisk] Link: https://pan.baidu.com/s/16bGkVy8su0D-yrazeM_dsA
   Extraction Code: g12z
 
 ### Experimental Results
