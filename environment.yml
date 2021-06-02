@@ -323,4 +323,3 @@ dependencies:
     - opencv-contrib-python==3.4.13.47
     - opencv-python==3.4.13.47
     - torchsummary==1.5.1
-prefix: /home/xw/anaconda3/envs/dibco_XW_DPLinkNet
