@@ -32,9 +32,9 @@ Fig. 3  Spatial Pyramid Pooling (SPP) module
 
 - anaconda
 - python=3.6.10
+- pytorch=1.7.1
 - cuda=10.2.89
 - cudnn=7.6.5
-- pytorch=1.7.1
 - opencv=3.4.13.47
 
 #### Download pre-trained LinkNet34, D-LinkNet34, and DP-LinkNet34 models
