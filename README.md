@@ -2,7 +2,7 @@
 
 **If the code is helpful to your research, the reader can refer to http://itiis.org/digital-library/24643 and please cite the following paper:**
 
-- **W. Xiong, X. Jia, D. Yang, M. Ai, L. Li and S. Wang, "DP-LinkNet: A convolutional network for historical document image binarization," *KSII Transactions on Internet and Information Systems*, vol. 15, no. 5, pp. 1778-1797, 2021. DOI: 10.3837/tiis.2021.05.011.** Download Paper (Free): [![pdficon_small](https://github.com/beargolden/DP-LinkNet/blob/main/images/pdficon_small.png)](http://itiis.org/journals/tiis/digital-library/manuscript/file/24643/TIIS%20Vol%2015,%20No%205-11.pdf)
+- **W. Xiong, X. Jia, D. Yang, M. Ai, L. Li and S. Wang, "DP-LinkNet: A convolutional network for historical document image binarization," *KSII Transactions on Internet and Information Systems*, vol. 15, no. 5, pp. 1778-1797, 2021. DOI: 10.3837/tiis.2021.05.011.** Download Paper (Free): [![](https://github.com/beargolden/DP-LinkNet/blob/main/images/pdficon_small.png)](http://itiis.org/journals/tiis/digital-library/manuscript/file/24643/TIIS%20Vol%2015,%20No%205-11.pdf)
 
 ### Abstract
 
